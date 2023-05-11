@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+      }
+
+      .container {
+        margin: auto;
+        max-width: 500px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+      h2 {
+        margin-top: 0;
+        text-align: center;
+      }
+
+      form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        width: 100%;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        padding: 10px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      button[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 16px;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+
+      @media screen and (max-width: 600px) {
+        .container {
+          max-width: 100%;
+          padding: 10px;
+          box-shadow: none;
+          border-radius: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-container">
+          <div class="logo">
+            <a href="index.html">
+              <!-- Add your logo image source -->
+              <img src="./assets/logo.png" alt="Logo" />
+            </a>
+          </div>
+          <div class="nav-links">
+            <ul>
+              <li>
+                <a href="signin.html" id="signin-link">Login</a>
+                <img src="./assets/login.png" alt="" />
+              </li>
+              <li>
+                <a href="#">Favourites</a>
+                <img src="./assets/favourites.png" alt="" />
+              </li>
+              <li>
+                <a href="#">Shopping Bag</a>
+                <img src="./assets/bag.png" alt="" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <h2>Sign Up</h2>
+      <form>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required />
+        <label for="confirm-password">Confirm Password</label>
+        <input
+          type="password"
+          id="confirm-password"
+          name="confirm-password"
+          required
+        />
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="first-name" required />
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="last-name" required />
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </body>
+</html>
